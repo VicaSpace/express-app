@@ -11,7 +11,7 @@ async function callApi5Times() {
     return {
       status: 400,
       message: 'Fact API error'
-    }
+    };
   }
   return result;
 }
