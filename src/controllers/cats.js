@@ -1,5 +1,5 @@
-const getFacts = (req,res) => res.send("cats")
+const getFacts = (_req, res) => res.send('cats');
 
-module.exports= {
-    getFacts
-}
+module.exports = {
+  getFacts,
+};
