@@ -1,5 +1,9 @@
-const getFacts = (req,res) => res.send("cats")
+const { callApi5Times } = require('../services/catApiCall');
 
-module.exports= {
-    getFacts
-}
+const getFacts = async (_req, res) => {
+  res.json(await callApi5Times());
+};
+
+module.exports = {
+  getFacts
+};
